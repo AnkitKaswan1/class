@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        .main{
+            /* display: flex; */
+        }
+
+        .box1{
+            width: 400px;
+            height: 300px;
+            font-size: 10px;
+            text-align: center;
+            background-color: aqua;
+            border: 1px solid white;
+            border-radius: 5%;
+            margin-bottom: 20px;
+        }
+
+        .box2{
+            width: 400px;
+            height: 300px;
+            font-size: 10px;
+            text-align: center;
+            background-color: #1fad12;
+            border: 1px solid white;
+            border-radius: 5%;
+            margin-bottom: 20px;
+        }
+
+        .box3{
+            width: 400px;
+            height: 300px;
+            font-size: 10px;
+            text-align: center;
+            background-color: #ad7712;
+            border: 1px solid white;
+            border-radius: 5%;
+            margin-bottom: 20px;
+        }
+
+        .box4{
+            width: 400px;
+            height: 300px;
+            font-size: 10px;
+            text-align: center;
+            background-color: #5d12ad;
+            border: 1px solid white;
+            border-radius: 5%;
+            margin-bottom: 20px;
+        }
+
+        .box5{
+            width: 400px;
+            height: 300px;
+            font-size: 10px;
+            text-align: center;
+            background-color: #ad1224;
+            border: 1px solid white;
+            border-radius: 5%;
+            margin-bottom: 20px;
+        }
+
+        @media screen and (min-width: 1440px) {
+            .box2{
+                display: none;
+            }
+            .box3{
+                display: none;
+            }
+            .box4{
+                display: none;
+            }
+            .box5{
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 1440px) and (min-width: 1024px) {
+            .box1{
+                display: none;
+            }
+            .box3{
+                display: none;
+            }
+            .box4{
+                display: none;
+            }
+            .box5{
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 1024px) and (min-width: 768px) {
+            .box1{
+                display: none;
+            }
+            .box2{
+                display: none;
+            }
+            .box4{
+                display: none;
+            }
+            .box5{
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 768px) and (min-width: 425px) {
+            .box1{
+                display: none;
+            }
+            .box3{
+                display: none;
+            }
+            .box2{
+                display: none;
+            }
+            .box5{
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 425px)  {
+            .box1{
+                display: none;
+            }
+            .box3{
+                display: none;
+            }
+            .box4{
+                display: none;
+            }
+            .box2{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box1">
+            <h1>This is a Media Query demo page</h1></div>
+        <div class="box2">
+            <h1>This is a Media Query demo page</h1>
+            <p>Screen Size: 1440px</p>
+        </div>
+        <div class="box3">
+            <h1>This is a Media Query demo page</h1>
+            <p>Screen Size: 1024px</p>
+        </div>
+        <div class="box4">
+            <h1>This is a Media Query demo page</h1>
+            <p>Screen Size: 768px</p>
+        </div>
+        <div class="box5">
+            <h1>This is a Media Query demo page</h1>
+            <p>Screen Size: 425px</p>
+        </div>
+    </div>
+</body>
+</html>
